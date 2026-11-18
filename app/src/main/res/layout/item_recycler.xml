@@ -39,6 +39,8 @@
         android:layout_marginTop="8dp"
         android:id="@+id/deskripsiWayang"
         android:text="deskripsiWayang"
+        android:ellipsize="end"
+        android:maxLines="3"
         app:layout_constraintStart_toEndOf="@+id/gambarWayang"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/karakterWayang"/>
