@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        siapkanData()
+        tambahData()
+        tampilkanData()
     }
 
     private fun siapkanData(){
