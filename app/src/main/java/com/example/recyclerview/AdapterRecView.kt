@@ -14,9 +14,8 @@ class AdapterRecView (private val listWayang: ArrayList<DcWayang>) :
 
     interface OnItemClickCallback {
         fun onItemClicked(data: DcWayang)
+        fun delData(pos: Int)
     }
-
-
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
