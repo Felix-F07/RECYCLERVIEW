@@ -23,7 +23,10 @@ class AdapterRecView (private val listWayang: ArrayList<DcWayang>) :
         holder: ListViewHolder,
         position: Int
     ) {
-        TODO("Not yet implemented")
+        val wayang = listWayang[position]
+        holder.binding.namaWayang.text = wayang.nama
+        holder.binding.karakterWayang.text = wayang.karakter
+        holder.binding.deskripsiWayang.text = wayang.deskripsi
     }
 
     override fun getItemCount(): Int {
