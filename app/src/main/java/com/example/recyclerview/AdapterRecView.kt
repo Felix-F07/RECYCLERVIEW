@@ -13,7 +13,7 @@ class AdapterRecView (private val listWayang: ArrayList<DcWayang>) :
     private lateinit var onItemClickCallback: OnItemClickCallback
 
     interface OnItemClickCallback {
-
+        fun onItemClicked(data: DcWayang)
     }
 
     override fun onCreateViewHolder(
