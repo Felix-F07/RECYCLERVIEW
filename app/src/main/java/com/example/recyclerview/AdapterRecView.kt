@@ -27,7 +27,7 @@ class AdapterRecView (private val listWayang: ArrayList<DcWayang>) :
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return listWayang.size
     }
 
     class ListViewHolder (val binding : ItemRecyclerBinding) :
