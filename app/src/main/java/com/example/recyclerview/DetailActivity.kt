@@ -19,5 +19,10 @@ class DetailActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val nama = intent.getStringExtra("nama")
+        val karakter = intent.getStringExtra("karakter")
+        val deskripsi = intent.getStringExtra("deskripsi")
+        val foto = intent.getStringExtra("foto")
+
     }
 }
