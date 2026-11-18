@@ -1,5 +1,6 @@
 package com.example.recyclerview
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerview.databinding.ItemRecyclerBinding
@@ -10,7 +11,12 @@ class AdapterRecView (private val listWayang: ArrayList<DcWayang>) :
         parent: ViewGroup,
         viewType: Int
     ): ListViewHolder {
-        TODO("Not yet implemented")
+        val binding = ItemRecyclerBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false
+        )
+        return ListViewHolder(binding)
     }
 
     override fun onBindViewHolder(
