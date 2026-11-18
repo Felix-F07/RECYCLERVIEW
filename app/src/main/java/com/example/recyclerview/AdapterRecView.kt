@@ -16,9 +16,7 @@ class AdapterRecView (private val listWayang: ArrayList<DcWayang>) :
         fun onItemClicked(data: DcWayang)
     }
 
-    fun setOnItemClickCallbak(onItemClickCallback: OnItemClickCallback){
-        this.onItemClickCallback = onItemClickCallback
-    }
+
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -68,6 +66,10 @@ class AdapterRecView (private val listWayang: ArrayList<DcWayang>) :
 
     override fun getItemCount(): Int {
         return listWayang.size
+    }
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
+        this.onItemClickCallback = onItemClickCallback
     }
 
     class ListViewHolder (val binding : ItemRecyclerBinding) :
