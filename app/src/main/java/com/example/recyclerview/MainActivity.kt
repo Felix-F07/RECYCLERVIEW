@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.recyclerview.databinding.ActivityMainBinding
 import android.app.AlertDialog
 import android.widget.Toast
+import androidx.recyclerview.widget.DefaultItemAnimator
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -106,6 +107,9 @@ class MainActivity : AppCompatActivity() {
             }
         })
         binding.rvWayang.adapter = adapterWayang
+        binding.rvWayang.itemAnimator = DefaultItemAnimator().apply {
+            removeDuration = 400L
+        }
 
     }
 }
